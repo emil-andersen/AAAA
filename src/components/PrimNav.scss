@@ -1,0 +1,50 @@
+@import "../var";
+
+
+.heading{background-color: $Dark-background;}
+
+.bussemand{
+    background-color:$Dark-background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    width: 65%;
+    margin: 0 auto;
+    color: $Dark-background;
+
+
+    .PrimNav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+
+        &__item{
+            text-decoration: none;
+            color: $Light-Color;
+            padding: 0 1.5em;
+            font-size: 16px;
+            font-family: $Bread;
+            position: relative;
+        };
+        
+        &__item:after{
+            content: '';
+            position: absolute;
+            width: 0; height: 3px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: $Logo_red;
+            transition: width .3s ease;
+            -webkit-transition: width .2s ease;
+          }
+           
+          &__item:hover:after{
+            width: 100%;
+            left: 0;
+            background:$Logo_red;
+          }
+    }
+}

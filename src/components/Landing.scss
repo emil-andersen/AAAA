@@ -1,0 +1,58 @@
+@import "../var";
+
+
+.LandingPage {
+    background-image:
+    linear-gradient(to bottom, $Dark-background, rgba(26, 26, 26, 0.295)),
+    url('https://wallpaperaccess.com/full/707055.jpg');
+    width:auto;
+    height: 91.5vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    &__content{
+     margin: 0 auto;
+        justify-content: center;
+        font-family: $Headline;
+        color: $Logo_red;
+        width: 70%;
+        font-family: $Bread;
+
+        h1{
+            font-size: 42px;
+            line-height: 1.5em
+            
+        };
+        h2{
+            padding-top: 1em;
+            font-size: 28px;
+        }
+    }
+    
+    .button{
+        text-decoration: none;
+        max-width: 8em;
+        display: block;
+        margin: 3em auto 0 auto;
+
+        .LandingPage__btn{
+            background-color: $Offwhite;
+            color: $Dark-background;
+            padding: 0.6em 1em;
+            font-size: 17px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 3em auto 0 auto;
+            font-family: $Bread;
+    
+            i{
+                color: #7289DA;
+                font-size: 17px;
+            }
+        }
+    }
+}

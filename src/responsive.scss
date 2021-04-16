@@ -1,0 +1,424 @@
+@import "./var";
+
+
+
+
+
+
+@media only screen and (max-width: 1150px) {
+
+    .Card__Container{
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display:grid;
+        grid-template: 150px / auto auto auto auto;
+        margin: 0 auto;
+        margin-bottom: 5em;
+
+
+       
+    
+    }
+    .card{
+        font-size: 21px;
+        background-color: $Offwhite;
+        color: $Dark-background;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding:1em;
+        margin: 1em;
+    }
+
+
+
+
+
+}
+
+
+//----------------------------------------------RESPONSIVE---1150-------END-----------------------------------------------------
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1280px) {
+
+
+    .Omos{
+        padding-bottom:1.5em ;
+        background-color: $Dark-background;
+        height: auto;
+    
+        &__Headline{ // Overskrift
+            text-align: center;
+            padding: 1.6em;
+            font-size: 32px;
+            font-family: $Headline;
+            color: $Offwhite;
+            text-transform: uppercase;
+        }
+        &__Box{ // Om os kassen med content box og billede
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            width:100%;
+    
+            img{ // billedet
+                max-width:auto;
+            }
+        };
+        &__Content{ // Om os kassen med tekxt og knap
+            width: 80%;
+            margin-top: 1em;
+            margin-bottom: 1.5em;
+            display: flex;
+            flex-direction: column;
+            
+        };
+        &__p{ // 
+            width: 100%;
+            font-size: 18px;
+            font-family: $Bread;
+            padding: 0.5em 0;
+            color: $Offwhite;
+        };
+        .button{
+            text-decoration: none;
+            max-width: 8em;
+            display: block;
+            margin-top: 3em;  
+            .Omos__btn{
+                background-color: $Offwhite;
+                color: $Dark-background;
+                padding: 0.6em 1em;
+                
+                border-radius: 10px;
+                text-align: center;
+                margin: 1em auto 0 auto;
+                font-family: $Bread;
+                i{
+                    color: #7289DA;
+                }
+            }
+        }
+    }
+
+    //-----------------------------------------------------CCCCCCCCCAAAAAAAAAAAAARRRRRRRRDDDDDDDD-----------------------------------------------------------------
+
+    .Card__Container{
+        display:grid;
+        grid-template: 150px / auto auto auto;
+        margin-bottom: 5em;
+    
+    }
+    .card{
+        font-size: 21px;
+        background-color: $Offwhite;
+        color: $Dark-background;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding:1em;
+        margin: 1em;
+    }
+
+
+
+
+    
+
+.Regler{
+    height: auto;
+    background-color:$Light-grey;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+
+    &__h1{
+        color: $Dark-background;
+        font-family: $Headline;
+    }
+    &__table{
+        table {
+            font-size:19px;
+            margin: 0 auto;
+            margin-top: 10%;
+            font-family:$Bread;
+            border-collapse: collapse;
+            width: 80%;
+            td, th {
+              text-align: left;
+              padding: 0.2em;
+            } 
+            tr:nth-child(even) {
+              background-color: $Light-grey;
+            }
+          }
+          
+    }
+}
+
+.Key{
+    height: auto;
+    background-color:$Light-grey;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+
+    &__h1{
+        color: $Dark-background;
+        font-family: $Headline;
+    }
+    &__table{
+        table {
+            font-size:21px;
+            margin: 0 auto;
+            margin-top: 10%;
+            font-family:$Bread;
+            border-collapse: collapse;
+            width: 80%;
+            td, th {
+              text-align: left;
+              padding: 0.2em;
+            } 
+            tr:nth-child(even) {
+              background-color: $Light-grey;
+            }
+          }
+          
+    }
+}
+
+//----------------------------------------------RESPONSIVE---1060-------END-----------------------------------------------------
+}
+
+
+
+@media only screen and (max-width: 760px) {
+    
+
+
+//******************************************************OM OS**************************************
+
+
+.Omos{
+    padding-bottom:1.5em ;
+    background-color: $Dark-background;
+    height: auto;
+
+    &__Headline{ // Overskrift
+        text-align: center;
+        padding: 1.6em;
+        font-size: 32px;
+        font-family: $Headline;
+        color: $Offwhite;
+        text-transform: uppercase;
+    }
+    &__Box{ // Om os kassen med content box og billede
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        //width:100%;
+
+        img{ // billedet
+            width:85%;
+            max-width:auto;
+        }
+    };
+    &__Content{ // Om os kassen med tekxt og knap
+        width: 85%;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        display: flex;
+        flex-direction: column;
+        
+    };
+    &__p{ // 
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5em;
+        font-family: $Bread;
+        color: $Offwhite;
+    };
+    .button{
+        text-decoration: none;
+        max-width: 8em;
+        display: block;
+        margin-top: 3em;  
+        .Omos__btn{
+            background-color: $Offwhite;
+            color: $Dark-background;
+            padding: 0.6em 1em;
+            
+            border-radius: 10px;
+            text-align: center;
+            margin: 1em auto 0 auto;
+            font-family: $Bread;
+            i{
+                color: #7289DA;
+            }
+        }
+    }
+}
+
+//******************************************************ARBEJDE**************************************
+
+
+.Arbejde__h1{
+    font-size: 36px;
+}
+
+.Card__Container{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+
+}
+.card{
+    background-color: $Offwhite;
+    color: $Dark-background;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:1em;
+    margin: 1em;
+}
+
+
+//******************************************************PRIMNAV**************************************
+
+
+
+.bussemand{
+    background-color:$Dark-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5em;
+    width: 90%;
+    color: $Dark-background;  
+    .PrimNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        width: 100%;
+        &__item{
+            text-decoration: none;
+            color: $Light-Color;
+            padding: 0 1.2em;
+            font-size: 14px;
+            font-family: $Bread;
+            position: relative;
+        };
+        &__item:after{
+            content: '';
+            position: absolute;
+            width: 0; 
+            height: 3px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: $Logo_red;
+            transition: width .3s ease;
+            -webkit-transition: width .2s ease;
+          }
+          &__item:hover:after{
+            width: 100%;
+            left: 0;
+            background:$Logo_red;
+          }
+    }
+}
+
+
+//******************************************************Regler_paa_netværket**************************************
+
+
+
+.Regler{
+    height: auto;
+    background-color:$Light-grey;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+
+    &__h1{
+        color: $Dark-background;
+        font-family: $Headline;
+    }
+    &__table{
+        table {
+            margin: 0 auto;
+            margin-top: 10%;
+            font-family:$Bread;
+            border-collapse: collapse;
+            width: 80%;
+            td, th {
+              text-align: left;
+              padding: 0.2em;
+              font-size: 12px;
+            } 
+          }
+          
+          
+    }
+}
+
+
+.Key{
+    height: auto;
+    background-color:$Light-grey;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+    &__h1{
+        color: $Dark-background;
+        font-family: $Headline;
+    }
+
+    &__table{
+        table {
+            margin: 0 auto;
+            margin-top: 20%;
+            font-family:$Bread;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td, th {
+            text-align: left;
+            padding: 0.4em 0;
+            font-size: 16px;
+          }
+    }
+}
+.spacer{
+    height: 5em;
+    background-color: $Light-grey;
+    color: $Light-grey;
+}
+
+// 760 END---------------------------------------------------------------------------
+}

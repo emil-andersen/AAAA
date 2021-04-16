@@ -1,0 +1,28 @@
+@import "../var"; 
+
+
+.Arbejde{
+    background-color: $Dark-background;
+    color: $Offwhite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: $Headline;
+    font-size: 21px;
+    padding-bottom: 4em;
+
+    &__h1{
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        font-size: 32px;
+    }
+
+    .card{
+        border-radius: 10px;
+        padding: 0.6em 1.2em;
+
+        a{
+            font-size: 14px;
+        }
+    }
+}   

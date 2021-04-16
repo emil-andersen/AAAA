@@ -1,0 +1,69 @@
+@import "../var";
+
+
+
+
+.Omos{
+    height: auto;
+    padding-bottom: 2em;
+    background-color: $Dark-background;
+
+    &__Headline{ // Overskrift
+        text-align: center;
+        padding: 1.6em;
+        font-size: 32px;
+        font-family: $Headline;
+        color: $Offwhite;
+        text-transform: uppercase;
+    }
+
+    &__Box{ // Om os kassen med content box og billede
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width:100%;
+
+        img{ // billedet
+            width:100%;
+            max-width:600px;
+        }
+    };
+
+    &__Content{ // Om os kassen med tekxt og knap
+        width: 35%;
+        margin-top: 10px;
+        padding-left: 2em;
+    };
+
+    &__p{ // 
+        font-size: 19px;
+        width: 100%;
+        font-family: $Bread;
+        color: $Offwhite;
+        padding: 0.5em 0;
+    };
+    .button{
+        text-decoration: none;
+        max-width: 8em;
+        display: block;
+        margin-top: 3em;
+        
+
+        .Omos__btn{
+            background-color: $Offwhite;
+            color: $Dark-background;
+            padding: 0.6em 1em;
+            font-size: 17px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 3em auto 0 auto;
+            font-family: $Bread;
+    
+            i{
+                color: #7289DA;
+                font-size: 17px;
+            }
+        }
+    }
+}
